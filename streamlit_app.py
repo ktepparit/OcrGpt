@@ -35,7 +35,7 @@ if uploaded_file is not None:
 
                 # เรียก Vision model ผ่าน Responses API
                 response = client.responses.create(
-                    model="gpt-4.1-mini",
+                    model="gpt-5-mini",
                     input=[
                         {
                             "role": "user",
@@ -72,3 +72,4 @@ if uploaded_file is not None:
             st.error(f"เกิดข้อผิดพลาดขณะเรียก OpenAI API: {e}")
 else:
     st.info("กรุณาอัปโหลดรูปภาพก่อน เพื่อเริ่มอ่านข้อความ 😊")
+
